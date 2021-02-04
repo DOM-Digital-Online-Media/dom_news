@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: news_video
+label: News video
+description: ''
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: news_video
+field_map: {  }

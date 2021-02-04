@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.cta
+    - node.type.news
+    - taxonomy.vocabulary.cta
+  module:
+    - node
+third_party_settings: {  }
+id: node.news.cta
+field_name: cta
+entity_type: node
+bundle: news
+label: 'Call to action'
+description: ""
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

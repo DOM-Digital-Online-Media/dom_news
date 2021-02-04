@@ -1,0 +1,58 @@
+form.node-form summary[role="button"],
+form.node-form a {
+  color: #0074bd !important;
+}
+
+form.node-form .field--name-template .form-radios>.form-item {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
+form.node-form .field--name-template {
+  background-color: rgb(237, 237, 237);
+  padding: 5px 10px 10px 10px;
+  color: #0074bd;
+}
+
+form.node-form .field--name-template .form-radios>.form-item:nth-child(5n) {
+  clear: left;
+}
+
+form.node-form .field--name-template .form-radios .form-type-radio label {
+  max-width: 180px;
+  display: inline-block;
+}
+
+form.node-form .field--name-template legend {
+  display: none;
+}
+
+form.node-form .tpllabel:after {
+  background-size: 7px 7px;
+  width: 7px;
+  height: 7px;
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(/core/misc/icons/ee0000/required.svg);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+}
+
+form.node-form .field--name-template .form-radios .form-type-radio input {
+  vertical-align: top;
+}
+
+img.template-news-images {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+form.node-form .field--name-template .form-item-template table tr td {
+  vertical-align: top;
+  padding: 10px 12px 10px 0;
+}

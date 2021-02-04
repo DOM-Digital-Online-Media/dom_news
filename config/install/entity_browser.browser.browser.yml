@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - views
+name: browser
+label: 'Image browser'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  88f1fdc2-4368-4e99-948c-886864c52fcb:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: news_image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 88f1fdc2-4368-4e99-948c-886864c52fcb
+    weight: 1
+    label: 'Upload Image'
+    id: media_image_upload
+  673a37c4-038e-4d38-82dc-f8990205630b:
+    settings:
+      view: media_entity_browser
+      view_display: image_browser
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 673a37c4-038e-4d38-82dc-f8990205630b
+    weight: 2
+    label: Library
+    id: view

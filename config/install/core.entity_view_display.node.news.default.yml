@@ -1,0 +1,166 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.body_bottom
+    - field.field.node.news.cta
+    - field.field.node.news.font
+    - field.field.node.news.gallery
+    - field.field.node.news.image_full_view
+    - field.field.node.news.image_teaser
+    - field.field.node.news.label_text
+    - field.field.node.news.push_to_app
+    - field.field.node.news.push_to_web
+    - field.field.node.news.subtitle
+    - field.field.node.news.summary
+    - field.field.node.news.target_url
+    - field.field.node.news.template
+    - node.type.news
+  module:
+    - link
+    - options
+    - text
+    - user
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  body_bottom:
+    weight: 16
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  cta:
+    weight: 10
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  font:
+    weight: 13
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  gallery:
+    type: entity_reference_entity_view
+    weight: 14
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  image_full_view:
+    type: entity_reference_entity_view
+    weight: 8
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  image_teaser:
+    type: entity_reference_entity_view
+    weight: 9
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  label_text:
+    weight: 12
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  push_to_app:
+    weight: 5
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  push_to_web:
+    weight: 4
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  subtitle:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  summary:
+    weight: 11
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  target_url:
+    weight: 7
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  template:
+    weight: 15
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

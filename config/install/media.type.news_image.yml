@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: news_image
+label: News image
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: news_image
+  gather_exif: false
+field_map: {  }

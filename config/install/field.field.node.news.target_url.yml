@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.target_url
+    - node.type.news
+  module:
+    - link
+third_party_settings: {  }
+id: node.news.target_url
+field_name: target_url
+entity_type: node
+bundle: news
+label: 'Target Url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

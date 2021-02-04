@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.label_text
+    - node.type.news
+  module:
+    - node
+third_party_settings: {  }
+id: node.news.label_text
+field_name: label_text
+entity_type: node
+bundle: news
+label: 'Label Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

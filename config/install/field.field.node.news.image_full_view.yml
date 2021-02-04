@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.image_full_view
+    - media.type.news_image
+    - media.type.news_video
+    - node.type.news
+  module:
+    - node
+third_party_settings: {  }
+id: node.news.image_full_view
+field_name: image_full_view
+entity_type: node
+bundle: news
+label: 'Image full view'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: news_image
+      video: news_video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: news_image
+field_type: entity_reference

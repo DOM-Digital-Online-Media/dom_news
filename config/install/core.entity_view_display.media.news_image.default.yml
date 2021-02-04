@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.news_image.news_image
+    - media.type.news_image
+  module: {  }
+id: media.news_image.default
+targetEntityType: media
+bundle: news_image
+mode: default
+content:
+  mews_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  name: true
+  uid: true

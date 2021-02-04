@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - views
+name: entity_browser
+label: 'Entity Browser'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  824b8cf7-4a0a-494f-bcf7-1242c3b8e1bb:
+    settings:
+      view: media_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 824b8cf7-4a0a-494f-bcf7-1242c3b8e1bb
+    weight: -8
+    label: Library
+    id: view
+  6ec0922d-d663-453f-93f4-6ce341e92904:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: news_image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 6ec0922d-d663-453f-93f4-6ce341e92904
+    weight: -10
+    label: 'Upload Image'
+    id: media_image_upload
+  0ea3a8c1-1f03-4da4-b26f-eed3261114e2:
+    settings:
+      extensions: 'mp4 flv avi'
+      media_type: video
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      multiple: '1'
+      submit_text: 'Select entities'
+    uuid: 0ea3a8c1-1f03-4da4-b26f-eed3261114e2
+    weight: -9
+    label: 'Upload Video'
+    id: upload

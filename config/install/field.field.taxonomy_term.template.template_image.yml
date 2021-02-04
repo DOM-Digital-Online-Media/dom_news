@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.template_image
+    - media.type.news_image
+    - taxonomy.vocabulary.template
+id: taxonomy_term.template.template_image
+field_name: template_image
+entity_type: taxonomy_term
+bundle: template
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      news_image: news_image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

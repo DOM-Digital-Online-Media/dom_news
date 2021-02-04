@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body_bottom
+    - node.type.news
+  module:
+    - text
+third_party_settings: {  }
+id: node.news.body_bottom
+field_name: body_bottom
+entity_type: node
+bundle: news
+label: 'Additional text below the picture gallery'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

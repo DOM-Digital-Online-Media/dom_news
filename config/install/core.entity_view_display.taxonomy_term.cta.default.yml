@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cta
+  module:
+    - text
+id: taxonomy_term.cta.default
+targetEntityType: taxonomy_term
+bundle: cta
+mode: default
+content: {  }
+hidden: {  }

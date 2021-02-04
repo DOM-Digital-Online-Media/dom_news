@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.push_to_web
+    - node.type.news
+  module:
+    - node
+third_party_settings: {  }
+id: node.news.push_to_web
+field_name: push_to_web
+entity_type: node
+bundle: news
+label: 'Push to web'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

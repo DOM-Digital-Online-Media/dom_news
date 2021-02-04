@@ -1,0 +1,7 @@
+news:
+  version: 1.x
+  js:
+    js/news.js: {}
+  css:
+    theme:
+      css/news.css: { weight: 2000 }
